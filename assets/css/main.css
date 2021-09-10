@@ -1,0 +1,109 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap'); */
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  color: "white";
+}
+
+.flex-column-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom slider */
+
+.slider {
+  -webkit-appearance: none;
+  height: 3px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+/* End slider */
+
+/* General styles */
+
+.white-text {
+  color: white;
+}
+
+.large-height {
+  height: 32px;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.border-right {
+  border-right: 1px solid white;
+}
+
+button {
+  height: 32px;
+  padding-top: 4px !important;
+}
+
+#list-container {
+  margin: 20px auto;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-bottom: 5px solid black;
+}
+
+#list-container div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #343a40;
+  text-align: center;
+  color: white;
+}
+
+#algo-info span {
+  font-size: 20px;
+}
